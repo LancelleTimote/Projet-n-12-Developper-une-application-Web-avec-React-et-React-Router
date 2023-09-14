@@ -1,11 +1,14 @@
 import "./Header.scss";
+import Logo from "../../assets/images/logo.svg"
+import HeaderNav from "../HeaderNav/HeaderNav"
 
-function Error() {
+function Header() {
   return (
-    <div>
-      <h1>Oups 🙈 Cette page n'existe pas</h1>
-    </div>
+    <header>
+      <img src={Logo} alt="Logo de l'agence Kasa" />
+      <HeaderNav />
+    </header>
   );
 }
 
-export default Error;
+export default Header;
