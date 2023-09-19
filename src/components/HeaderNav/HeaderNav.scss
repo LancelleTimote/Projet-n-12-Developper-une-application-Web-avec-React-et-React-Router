@@ -1,0 +1,18 @@
+.header_nav {
+    width: 170px;
+    &_list {
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        justify-content: space-between;
+        a {
+            color: #ff6060;
+        }
+        &_element {
+            text-decoration: none;
+        }
+        &_active {
+            text-decoration: underline #ff6060;
+        }
+    }
+}

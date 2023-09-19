@@ -1,0 +1,12 @@
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &_logo {
+        height: 30px;
+        margin-top: 40px;
+    }
+}
