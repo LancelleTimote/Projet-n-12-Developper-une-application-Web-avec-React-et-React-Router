@@ -1,7 +1,10 @@
-function Banner() {
+import "./Banner.scss";
+
+function Banner({ image, title }) {
     return (
-        <section>
-            <p>Chez vous, partout et ailleurs</p>
+        <section className="banner">
+            <img src={image} alt="" />
+            {title && <p className="banner_text">{title}</p>}
         </section>
     );
 }

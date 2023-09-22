@@ -1,18 +1,21 @@
+@import "../../style/Utils/Variables.scss";
+
 .header_nav {
-    width: 170px;
     &_list {
+        width: 250px;
         list-style: none;
         padding-left: 0;
         display: flex;
         justify-content: space-between;
         a {
-            color: #ff6060;
+            color: $primary-color;
+            font-size: 24px;
         }
         &_element {
             text-decoration: none;
         }
         &_active {
-            text-decoration: underline #ff6060;
+            text-decoration: underline $primary-color;
         }
     }
 }
