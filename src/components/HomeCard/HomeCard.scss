@@ -2,14 +2,22 @@
 
 .homecard {
     text-decoration: none;
+    position: relative;
+    width: 30%;
     &_image {
         height: 340px;
-        width: 340px;
+        width: 100%;
         border-radius: 10px;
+        object-fit: cover;
     }
     &_title {
         font-size: 18px;
         line-height: 25px;
         color: $secondary-color;
+        position: absolute;
+        z-index: 2;
+        bottom: 5px;
+        left: 20px;
+        right: 20px;
     }
 }

@@ -4,4 +4,10 @@
     margin: 40px 75px;
     background-color: $background-grey-color;
     border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 50px;
 }
