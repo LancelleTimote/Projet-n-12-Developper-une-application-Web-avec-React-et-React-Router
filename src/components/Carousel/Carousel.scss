@@ -1,0 +1,42 @@
+@import "../../style/Utils/Variables.scss";
+
+.carousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 415px;
+    margin: 0 75px;
+    &_image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+    &_button_left {
+        left: 20px;
+    }
+    &_button_right {
+        right: 20px;
+    }
+    &_counter {
+        bottom: 20px;
+        font-size: 18px;
+    }
+    &_button_left,
+    &_button_right {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    &_button_left,
+    &_button_right,
+    &_counter {
+        position: absolute;
+        color: $secondary-color;
+    }
+    .fa-chevron-left,
+    .fa-chevron-right {
+        height: 90px;
+    }
+}
