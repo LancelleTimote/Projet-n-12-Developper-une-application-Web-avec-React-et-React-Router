@@ -23,8 +23,3 @@ function Dropdown({ title, children }) {
 }
 
 export default Dropdown;
-
-/* <i class="fa-solid fa-chevron-down"></i>
-            <i class="fa-solid fa-chevron-up"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-circle"></i> */

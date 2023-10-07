@@ -1,0 +1,65 @@
+@import "../../style/Utils/Variables.scss";
+
+.accommodation {
+    margin: 25px 75px 50px 75px;
+    &_top {
+        display: flex;
+        justify-content: space-between;
+        color: $primary-color;
+        &_text {
+            &_title {
+                font-size: 36px;
+                margin-top: 0;
+                margin-bottom: 5px;
+            }
+            &_location {
+                font-size: 18px;
+            }
+        }
+        &_host {
+            display: flex;
+            align-items: center;
+            &_name {
+                font-size: 18px;
+                white-space: pre-wrap;
+                width: 75px;
+                text-align: right;
+                margin-right: 15px;
+            }
+        }
+    }
+    &_mid {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+        &_tags {
+            display: flex;
+            gap: 10px;
+        }
+    }
+    &_bot {
+        display: flex;
+        justify-content: space-between;
+        color: $primary-color;
+        font-size: 18px;
+        line-height: 25px;
+        &_description,
+        &_equipments {
+            margin: 0;
+            background-color: $background-shadow-color;
+            padding: 15px;
+        }
+        &_equipments {
+            list-style: none;
+        }
+    }
+}
+
+.dropdown {
+    width: 45%;
+    &_top {
+        h2 {
+            font-size: 18px;
+        }
+    }
+}

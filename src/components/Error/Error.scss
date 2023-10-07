@@ -1,0 +1,25 @@
+@import "../../style/Utils/Variables.scss";
+
+.error, a {
+    color: $primary-color;
+}
+
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &_number {
+        font-size: 288px;
+        font-weight: 700;
+        margin-top: 25px;
+    }
+    &_text {
+        font-size: 36px;
+        margin: 125px 0;
+    }
+    a {
+        font-size: 18px;
+        margin-bottom: 125px;
+    }
+}

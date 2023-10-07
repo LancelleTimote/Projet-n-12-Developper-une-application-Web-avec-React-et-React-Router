@@ -1,4 +1,4 @@
-import immo from "../../datas/accommodation.json";
+import realEstateData from "../../datas/accommodation.json";
 import Header from "../../components/Header/Header";
 import Banner from "../../components/Banner/Banner";
 import imageHomeBanner from "../../assets/images/home_banner.jpg";
@@ -7,13 +7,12 @@ import Footer from "../../components/Footer/Footer";
 import "./Home.scss";
 
 function Home() {
-    console.log(immo);
     return (
         <div>
             <Header />
             <Banner image={imageHomeBanner} title="Chez vous, partout et ailleurs" />
             <section className="homeCardContainer">
-                {immo.map((item) => (
+                {realEstateData.map((item) => (
                     <HomeCard key={item.id} id={item.id} title={item.title} cover={item.cover} />
                 ))}
             </section>
