@@ -1,1 +1,19 @@
 @import "../../style/Utils/Variables.scss";
+
+.star_full,
+.star_empty {
+    height: 20px;
+}
+
+.star_full {
+    color: $primary-color;
+}
+
+.star_empty {
+    color: $star-shadow-color;
+}
+
+.star-rating {
+    display: flex;
+    gap: 10px;
+}

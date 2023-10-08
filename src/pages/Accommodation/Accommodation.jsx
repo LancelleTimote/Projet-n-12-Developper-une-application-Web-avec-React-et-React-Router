@@ -8,6 +8,7 @@ import Dropdown from "../../components/Dropdown/Dropdown";
 import Tag from "../../components/Tag/Tag";
 import UserPicture from "../../components/UserPicture/UserPicture";
 import "./Accommodation.scss";
+import Star from "../../components/Star/Star";
 
 function Accommodation() {
     const { id } = useParams();
@@ -35,7 +36,7 @@ function Accommodation() {
                         ))}
                     </div>
                     <div>
-                        <span>stars</span>
+                        <Star rating={accommodation.rating} />
                     </div>
                 </div>
                 <div className="accommodation_bot">
@@ -43,7 +44,7 @@ function Accommodation() {
                         <p className="accommodation_bot_dropdown_description">{accommodation.description}</p>
                     </Dropdown>
                     <Dropdown title="Équipements" customClassName="accommodation_bot_dropdown">
-                        <ul className="accommodation_bot_equipments">
+                        <ul className="accommodation_bot_dropdown_equipments">
                             {accommodation.equipments.map((equipment) => (
                                 <li key={equipment}>{equipment}</li>
                             ))}
