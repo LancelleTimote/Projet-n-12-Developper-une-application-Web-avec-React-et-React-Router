@@ -39,10 +39,10 @@ function Accommodation() {
                     </div>
                 </div>
                 <div className="accommodation_bot">
-                    <Dropdown title="Description">
-                        <p className="accommodation_bot_description">{accommodation.description}</p>
+                    <Dropdown title="Description" customClassName="accommodation_bot_dropdown">
+                        <p className="accommodation_bot_dropdown_description">{accommodation.description}</p>
                     </Dropdown>
-                    <Dropdown title="Équipements">
+                    <Dropdown title="Équipements" customClassName="accommodation_bot_dropdown">
                         <ul className="accommodation_bot_equipments">
                             {accommodation.equipments.map((equipment) => (
                                 <li key={equipment}>{equipment}</li>
@@ -50,27 +50,6 @@ function Accommodation() {
                         </ul>
                     </Dropdown>
                 </div>
-                <div>
-                    <span>{accommodation.host.name}</span>
-                    <UserPicture picture={accommodation.host.picture} name={accommodation.host.name} />
-                </div>
-            </div>
-            <div>
-                {accommodation.tags.map((tag) => (
-                    <Tag key={tag} tag={tag} />
-                ))}
-            </div>
-            <div>
-                <Dropdown title="Description">
-                    <p>{accommodation.description}</p>
-                </Dropdown>
-                <Dropdown title="Équipements">
-                    <ul>
-                        {accommodation.equipments.map((equipment) => (
-                            <li key={equipment}>{equipment}</li>
-                        ))}
-                    </ul>
-                </Dropdown>
             </div>
             <Footer />
         </div>

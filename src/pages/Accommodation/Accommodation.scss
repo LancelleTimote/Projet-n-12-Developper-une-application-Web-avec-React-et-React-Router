@@ -43,23 +43,20 @@
         color: $primary-color;
         font-size: 18px;
         line-height: 25px;
-        &_description,
-        &_equipments {
-            margin: 0;
-            background-color: $background-shadow-color;
-            padding: 15px;
-        }
-        &_equipments {
-            list-style: none;
-        }
-    }
-}
-
-.dropdown {
-    width: 45%;
-    &_top {
-        h2 {
-            font-size: 18px;
+        &_dropdown {
+            width: 45%;
+            h2 {
+                font-size: 18px;
+            }
+            &_description,
+            &_equipments {
+                margin: 0;
+                background-color: $background-shadow-color;
+                padding: 15px;
+            }
+            &_equipments {
+                list-style: none;
+            }
         }
     }
 }
