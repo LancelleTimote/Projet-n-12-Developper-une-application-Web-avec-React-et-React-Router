@@ -8,6 +8,12 @@
         border-radius: 5px;
         color: $secondary-color;
         padding: 0 15px;
+        @media (max-width: 425px) {
+            padding: 0 5px;
+            h2 {
+                font-size: 13px;
+            }
+        }
         &_button {
             border: none;
             background-color: transparent;
@@ -16,6 +22,9 @@
             .fa-chevron-up {
                 height: 30px;
                 color: $secondary-color;
+                @media (max-width: 425px) {
+                    height: 18px;
+                }
             }
         }
     }
