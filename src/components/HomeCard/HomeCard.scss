@@ -8,6 +8,10 @@
     border-radius: 10px;
     height: 340px;
     width: 30%;
+    @media (max-width: 425px) {
+        height: 230px;
+        width: 100%;
+    }
     &_image {
         height: 100%;
         width: 100%;

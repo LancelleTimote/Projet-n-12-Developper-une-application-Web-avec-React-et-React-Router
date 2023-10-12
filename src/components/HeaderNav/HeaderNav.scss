@@ -2,14 +2,19 @@
 
 .header_nav {
     &_list {
-        width: 250px;
         list-style: none;
         padding-left: 0;
         display: flex;
-        justify-content: space-between;
+        gap: 55px;
+        @media (max-width: 425px) {
+            gap: 26px;
+        }
         a {
             color: $primary-color;
             font-size: 24px;
+            @media (max-width: 425px) {
+                font-size: 12px;
+            }
         }
         &_element {
             text-decoration: none;

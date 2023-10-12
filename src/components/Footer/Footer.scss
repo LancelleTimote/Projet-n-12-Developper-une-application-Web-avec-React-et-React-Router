@@ -7,11 +7,17 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 60px;
+    @media (max-width: 425px) {
+        padding: 50px 0;
+    }
     &_logo {
         height: 40px;
-        margin-top: 40px;
     }
     &_text {
         font-size: 24px;
+        @media (max-width: 425px) {
+            font-size: 12px;
+        }
     }
 }

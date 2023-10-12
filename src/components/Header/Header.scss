@@ -3,7 +3,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 425px) {
+        margin: 15px 20px;
+    }
     &_logo {
         height: 68px;
+        @media (max-width: 425px) {
+            height: 45px;
+        }
     }
 }
