@@ -3,6 +3,9 @@
 .star_full,
 .star_empty {
     height: 20px;
+    @media (max-width: 425px) {
+        height: 18px;
+    }
 }
 
 .star_full {

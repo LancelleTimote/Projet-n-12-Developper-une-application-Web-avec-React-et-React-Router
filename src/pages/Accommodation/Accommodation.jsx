@@ -20,23 +20,25 @@ function Accommodation() {
             {accommodation && <Carousel picture={accommodation.pictures} />}
             <div className="accommodation">
                 <div className="accommodation_top">
-                    <div className="accommodation_top_text">
-                        <h2 className="accommodation_top_text_title">{accommodation.title}</h2>
-                        <span className="accommodation_top_text_location">{accommodation.location}</span>
+                    <div className="accommodation_top_left">
+                        <div className="accommodation_top_left_text">
+                            <h2 className="accommodation_top_left_text_title">{accommodation.title}</h2>
+                            <span className="accommodation_top_left_text_location">{accommodation.location}</span>
+                        </div>
+                        <div className="accommodation_top_left_tags">
+                            {accommodation.tags.map((tag) => (
+                                <Tag key={tag} tag={tag} />
+                            ))}
+                        </div>
                     </div>
-                    <div className="accommodation_top_host">
-                        <span className="accommodation_top_host_name">{accommodation.host.name}</span>
-                        <UserPicture picture={accommodation.host.picture} name={accommodation.host.name} />
-                    </div>
-                </div>
-                <div className="accommodation_mid">
-                    <div className="accommodation_mid_tags">
-                        {accommodation.tags.map((tag) => (
-                            <Tag key={tag} tag={tag} />
-                        ))}
-                    </div>
-                    <div>
-                        <Star rating={accommodation.rating} />
+                    <div className="accommodation_top_right">
+                        <div className="accommodation_top_right_host">
+                            <span className="accommodation_top_right_host_name">{accommodation.host.name}</span>
+                            <UserPicture picture={accommodation.host.picture} name={accommodation.host.name} />
+                        </div>
+                        <div className="accommodation_top_right_stars">
+                            <Star rating={accommodation.rating} />
+                        </div>
                     </div>
                 </div>
                 <div className="accommodation_bot">
