@@ -3,7 +3,7 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import Carousel from "../../components/Carousel/Carousel";
 import realEstateData from "../../datas/accommodation.json";
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import Dropdown from "../../components/Dropdown/Dropdown";
 import Tag from "../../components/Tag/Tag";
 import UserPicture from "../../components/UserPicture/UserPicture";
@@ -13,6 +13,10 @@ import Star from "../../components/Star/Star";
 function Accommodation() {
     const { id } = useParams();
     const accommodation = realEstateData.find((item) => item.id === id);
+
+    if (!accommodation) {
+        return <Navigate to="/404" />;
+    }
 
     return (
         <div>
