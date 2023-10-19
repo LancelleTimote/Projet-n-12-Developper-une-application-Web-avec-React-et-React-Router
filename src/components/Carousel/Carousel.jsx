@@ -18,15 +18,21 @@ function Carousel({ picture }) {
         <div className="carousel">
             <img className="carousel_image" src={picture[currentIndex]} alt="" />
 
-            <button className="carousel_button_left" onClick={goToPrevious}>
-                <FontAwesomeIcon icon={faChevronLeft} />
-            </button>
+            {picture.length > 1 && (
+                <button className="carousel_button_left" onClick={goToPrevious}>
+                    <FontAwesomeIcon icon={faChevronLeft} />
+                </button>
+            )}
+
             <span className="carousel_counter">
                 {currentIndex + 1}/{picture.length}
             </span>
-            <button className="carousel_button_right" onClick={goToNext}>
-                <FontAwesomeIcon icon={faChevronRight} />
-            </button>
+
+            {picture.length > 1 && (
+                <button className="carousel_button_right" onClick={goToNext}>
+                    <FontAwesomeIcon icon={faChevronRight} />
+                </button>
+            )}
         </div>
     );
 }
